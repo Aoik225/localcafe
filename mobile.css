@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Font Setting */
+body,
+input,
+button,
+select,
+textarea,
+.navbar-search .search-query {
+  font-family: "Playfair Display", Times, serif;
+  font-size: 15px;
+  color: var(--main-dark);
+}
+
+/* CSS Variables */
+:root {
+  --main-dark: #2D2D3B;
+  --main-offdark: #26263e;
+  --main-light: #f8f0d8;
+  --main-primary: #FFCCC7;
+  --main-offprimary: #F0D3B2;
+  --gradiant-dark: #2D2D3B80;
+  --gradiant-middle: #FFCCC780;
+  --gradiant-light: #F0D3B280;
+}
+
+/* CSS Reset */
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+
+/* Body and Main style */
+header {
+  position:relative;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+}
+.text-italic {
+  font-style: italic;
+}
+
+.big-txt {
+  font-size: 1.3em;
+}
+
+.hero-title {
+  font-size: 3em;
+}
+
+.nx-flex, .ny-flex {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.btn-offprimary {
+  font-size: 1em;
+}
+
+/* Navbar */
+.block-navbar {
+  background-color: var(--main-offdark);
+  color: var(--main-primary);
+  margin: 0;
+  border-bottom: solid 0.5em var(--main-offprimary);
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  padding-bottom: 1em;
+  padding-top: 0;
+}
+
+.navbar ul, li, a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: var(--main-primary);
+}
+
+.navbar a {
+  padding: 0.5em;
+  margin: 0;
+}
+
+.navbar p {
+  padding: 0.5em;
+}
+
+.current {
+  background: var(--main-primary);
+  color: var(--main-dark);
+  overflow: hidden;
+}
+
+.non-current:hover {
+  background-color: var(--main-primary);
+  color: var(--main-dark);
+}
+
+#logo img{
+  height: 3.5em;
+  width: 5em;
+  margin: auto;
+  margin-top: 2em;
+}
+
+/* Home: Hero */
+#hero h1 {
+  color: var(--main-offprimary);
+  font-size: 4.5em;
+}
+
+.book-and-delivery {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Home: Main-Sections */
+#home-main {
+  display: flex;
+  flex-direction: column;
+}
+
+#map, #hours, #reviews {
+  width: 100%;
+}
+
+/* Home: Main-Sections_location */
+.location {
+  border: 0.3em  solid var(--main-offdark);
+  padding: 1em;
+}
+
+#map h2, p {
+  text-align: center;
+}
+
+#map p {
+  line-height: 2em;
+}
+
+.google-map {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Home: Main-Sections_trading hours */
+#hours {
+  text-align: center;
+}
+
+#hours table {
+  border: 0.2em dotted var(--main-offdark);
+  padding: 0.5em;
+  line-height: 2em;
+  margin: auto;
+  width: 100%;
+
+}
+
+#hours table, th, td{
+  padding: 0.5em;
+}
+
+#time-table {
+  border: 0.2em dotted var(--main-offdark);
+  line-height: 2em;
+  text-align: center;
+}
+
+#menu-btn input {
+  margin: 1.2em;
+}
+
+#menu-btn {
+  width: 70%;
+  margin: auto;
+  margin-top: 0.5em;
+}
+
+/* Home: Main-Sections_reviews */
+.review-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  background-color: var(--main-offdark);
+  padding: 2em;
+}
+
+/* Menu: Menu-hero */
+#menu-hero {
+  padding-bottom: 0;
+  height: 650px;
+}
+.menu-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-menu-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-menu-content p {
+  text-align: left;
+}
+
+.food-photo {
+  display: none;
+}
+
+#download-btn {
+  border: 0.3em dotted var(--main-offdark);
+  padding: 2em 0 2em 0;
+  height: 55%;
+}
+
+#download-btn label {
+  font-size: 1.3em;
+  }
+
+/* Menu: Main-section */
+.menu-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-bar {
+  display: none;
+}
+
+.card-content h2 {
+  font-size: 1.3em;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+
+/* Menu: inside menu */
+.coffee-menu p {
+  width: 50%;
+}
+
+.tea-menu p {
+  width: 50%;
+}
+
+/* Menu: grid */
+.grid-container {
+  column-gap: 0.5em;
+  row-gap: 0.5em;
+}
+
+.grid-item {
+  padding: 0.2em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+
+.grid-item img {
+  height: 130px;
+}
+
+
+/* About: Main/Hero */
+.about-main {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#about-hero {
+  background-color: var(--main-dark);
+  color: var(--main-light);
+  padding: 2em;
+  padding-bottom: 0em;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-container-dark {
+  display: flex;
+  flex-direction: column;
+}
+
+#cafe-img img {
+  display: none;
+}
+
+/* About: Main-section_staff cards */
+.staff-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.staff p {
+  text-align: left;
+  margin-top: 0.3em;
+}
+
+.staff-name {
+  font-size: larger;
+  font-style: italic;
+  margin: 0.1em;
+  padding: 1em;
+}
+
+.staff-img-and-name {
+  display: flex;
+}
+
+.staff img {
+  width: 50%;
+  border-radius: 20%;
+}
+
+/* Contact form */
+#contact-form {
+  text-align: center;
+  margin: 0.3em;
+  padding: 1em;
+}
+
+#contact-form h2 {
+  margin: 0.5em;
+  padding: 0.5em;
+  background-color: var(--main-primary);
+  border-radius: 10%;
+}
+
+/* Footer */
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.company-info {
+  border-bottom: 0.2em dotted var(--main-primary);
+  border-right: none;
+}
+
+.sns {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.signup {
+  border-top: 0.2em dotted var(--main-primary);
+  border-left: none;
+  padding-top: 1em;
+}
+
+.company-info {
+  padding-bottom: 0.5em;
+}

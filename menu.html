@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" media="screen and (max-width:768px)" href="./mobile.css">
+  <title>Local Cafe | Home</title>
+</head>
+<body>
+  <header>
+    <!-- Navbar -->
+    <nav class="block-navbar">
+      <div class="container nx-flex navbar" id="logo">
+        <img src="./logo.jpg" alt="logo">
+        <div class="nav-menu">
+          <ul>
+            <li><a href="./index.html" class="non-current">Home</a></li>
+            <li><a href="./menu.html" class="current">Menu</a></li>
+            <li><a href="./about.html" class="non-current">About</a></li>
+            <li><a href="#" class="non-current">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="menu-main">
+    <section id="menu-hero">
+      <h1 class="hero-title">Menu</h1>
+      <div class="container menu-container">
+        <div class="food-photo"><img src="./photo/cafeFood.jpg" alt="Bread with grilled chicken, avocado and egg."></div>
+        <div id="about-menu">
+          <div class="about-menu-content">
+            <p>Whether you have a lot of food likes or dislikes, food allergies or can't eat certain foods, our job is to provide a safe and
+               enjoyable meal and time for everyone who comes to this café.</p>
+            <p>If you have any questions about the menu, feel free to ask our supportive staff or use the contact form!</p>
+            <div id="menu-search">
+              <form action="#">
+                <label for="searchbar">You Can Search Menu Here!</label>
+                <input type="text" placeholder="Search menu" id="searchbar">
+                <button type="submit" class="btn-offprimary-small">Search</button>
+              </form>
+            </div>
+          </div>
+          <div id="download-btn">
+            <p class="big-txt">Download Menu Here!</p>
+            <div id="downlaod-menu">
+              <a href="./localcafe_menu.pdf" download="localcafe_menu.pdf">
+                <p class="btn-offprimary" id="dl-btn">Download</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="food-photo"><img src="./photo/coffeeBrew.jpg" alt="Pour over coffee maker"></div>
+      </div>
+    </section>
+    <div id="menu">
+      <!-- Menu bar -->
+      <div class="menu-bar">
+        <p class="big-txt" id="click-nav">Click on a category to jump to it!</p>
+        <a href="#breakfast" class="btn-primary menu-category-btn"><p>Breakfast</p></a>
+        <a href="#lunch" class="btn-primary menu-category-btn"><p>Lunch</p></a>
+        <a href="#desserts" class="btn-primary menu-category-btn"><p>Desserts</p></a>
+        <a href="#drinks" class="btn-primary menu-category-btn"><p>Drinks</p></a>
+        <a href="#kids" class="btn-primary menu-category-btn"><p>Kids</p></a>
+      </div>
+      <!-- Menu cards -->
+      <section class="menu-content menu-grid">
+        <!-- Breakfast Menu -->
+        <h2 id="breakfast" class="menu-title">Breakfast</h2>
+        <div class="menu-cards grid-container">
+          <div class="grid-item">
+            <img src="./photo/pancake.jpg" alt="Pancake on the plate">
+            <div class="card-content">
+              <h2>Pancake</h2>
+              <h2>$16</h2>
+              <p>Homemade fluffy pancakes. Choice of ice cream or whipped cream on the side.</p>
+              <div class="tags">
+                <p class="popular-tag">Popular</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./photo/toast.jpg" alt="Toast on the plate">
+            <div class="card-content">
+              <h2>Toast</h2>
+              <h2>$15</h2>
+              <p>Toast, the breakfast staple. Toasted sandwiches are available for an additional fee of $2.</p>
+              <div class="tags">
+                <p class="vegetarian-tag">Vegetarian</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./photo/breakfast-bowl.jpg" alt="Oatmeal bowl with lots of fruit">
+            <div class="card-content">
+              <h2>Breakfast Bowl</h2>
+              <h2>$17</h2>
+              <p>Healthy breakfast with plenty of oats and fruit. There is a choice of yoghurt or oatmeal.</p>
+              <div class="tags">
+                <p class="tag vegetarian-tag">Vegetarian</p>
+                <p class="tag vegan-tag">Vegan</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./photo/french-toast.jpg" alt="French toast with blueberries and bananas">
+            <div class="card-content">
+              <h2>French Toast</h2>
+              <h2>$18</h2>
+              <p>French toast that makes you happy when you eat it. Can be vegan-friendly!</p>
+              <div class="tags">
+                <p class="vegetarian-tag">Vegetarian</p>
+                <p class="vegan-tag">Vegan</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./photo/english-breakfast.jpg" alt="English breakfast of eggs, baked beans, bacon and bread">
+            <div class="card-content">
+              <h2>English Breakfast</h2>
+              <h2>$19</h2>
+              <p>This is for people who want to eat a lot in the morning!</p>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./photo/egg-benedict.jpg" alt="Egg benedict on the plate">
+            <div class="card-content">
+              <h2>Egg Benedict</h2>
+              <h2>$20</h2>
+              <p>Not too heavy, not too light, ideal for breakfast. A choice of bacon or smoked salmon.</p>
+            </div>
+          </div>
+        </div>
+         <!-- Lunch Menu -->
+        <h2 id="lunch" class="menu-title">Lunch</h2>
+        <div class="menu-cards grid-container">
+          <div class="grid-item">
+            <img src="./photo/burger.jpg" alt="Hamburger">
+            <div class="card-content">
+              <h2>Burger</h2>
+              <h2>$25</h2>
+              <p>Classic burger with carefully selected buns. You can choose from beef, chicken or veggie.</p>
+              <div class="tags">
+                <p class="popular-tag">Popular</p>
+                <p class="vegetarian-tag">Vegetarian</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./photo/bagel.jpg" alt="Bagel with lettuce and ham">
+            <div class="card-content">
+              <h2>Bagel</h2>
+              <h2>$23</h2>
+              <p>Bagel sandwiches with a choice of ingredients. Recommended for vegans!</p>
+              <div class="tags">
+                <p class="vegetarian-tag">Vegetarian</p>
+                <p class="vegan-tag">Vegan</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./photo/pasta.jpg" alt="Fittucine pasta on the plate">
+            <div class="card-content">
+              <h2>Pasta</h2>
+              <h2>$24</h2>
+              <p>The special fettuccine pasta is excellent with the special homemade sauce.</p>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./photo/risotto.jpg" alt="Risotto on the plate">
+            <div class="card-content">
+              <h2>Risotto</h2>
+              <h2>$25</h2>
+              <p>Seafood risotto with full of flavour. Recommended for seafood lovers!</p>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./photo/salad-bowl.jpg" alt="Salad bowl with avocado, beans and nuts">
+            <div class="card-content">
+              <h2>Salad Bowl</h2>
+              <h2>$23</h2>
+              <p>A healthy vegetable lunch that you could eat every day.</p>
+              <div class="tags">
+                <p class="vegetarian-tag">Vegetarian</p>
+                <p class="vegan-tag">Vegan</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./photo/roasted-chicken.jpg" alt="Sliced roasted chicken on the plate">
+            <div class="card-content">
+              <h2>Roasted Chicken</h2>
+              <h2>$30</h2>
+              <p>Eat meat well to replenish your energy for the afternoon!</p>
+            </div>
+          </div>
+        </div>
+         <!-- Desserts Menu -->
+        <h2 id="desserts" class="menu-title">Desserts</h2>
+        <div class="menu-cards grid-container">
+          <div class="grid-item">
+            <img src="./photo/ice-cream.jpg" alt="vanilla ice-cream with strawberry jam on the top">
+            <div class="card-content">
+              <h2>Ice Cream</h2>
+              <h2>$9</h2>
+              <p>Everyone's favourite cold dessert classic. You can choose your favourite flavour.</p>
+              <div class="tags">
+                <p class="popular-tag">Popular</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./photo/brownie.jpg" alt="Brownie on the plate">
+            <div class="card-content">
+              <h2>Brownie</h2>
+              <h2>$10</h2>
+              <p>Rich chocolate brownies that go well with coffee or tea.</p>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./photo/cheese-cake.jpg" alt="Cheese cake with blueberry">
+            <div class="card-content">
+              <h2>Cheese Cake</h2>
+              <h2>$12</h2>
+              <p>A refreshing cheesecake with just the right amount of acidity and sweetness.</p>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./photo/mille-feuille.jpg" alt="Mille feuille with strawberries">
+            <div class="card-content">
+              <h2>Mille Feuille</h2>
+              <h2>$13</h2>
+              <p>A little fancy dessert to get you in the mood. Full of looks and tastes!</p>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./photo/tiramisu.jpg" alt="Tiramisu">
+            <div class="card-content">
+              <h2>Tiramisu</h2>
+              <h2>$13</h2>
+              <p>Original tiramisu with coffee carefully selected by the café.</p>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./photo/tart.jpg" alt="Strawberry tart">
+            <div class="card-content">
+              <h2>Fruit Tart</h2>
+              <h2>$10</h2>
+              <p>Tart made from an abundance of fresh seasonal fruit. This month it is strawberry tarts.</p>
+            </div>
+          </div>
+        </div>
+         <!-- Drink Menu -->
+        <h2 id="drinks" class="menu-title">Drinks</h2>
+        <div class="menu-cards grid-container">
+          <div class="grid-item">
+            <img src="./photo/flat-white.jpg" alt="Coffee with latte-art">
+            <div class="card-content">
+              <h2>Coffee</h2>
+              <p>Enjoy a special cup of coffee brewed by our coffee specialists!</p>
+              <div class="coffee-menu">
+                <p class="menu-name">Black</p>
+                <p>[Hot/Ice]</p>
+                <p>$5</p>
+              </div>
+              <div class="coffee-menu">
+                <p class="menu-name">Latte</p>
+                <p>[Hot/Ice]</p>
+                <p>$5</p>
+              </div>
+              <div class="coffee-menu">
+                <p class="menu-name">Cappuccino</p>
+                <p>[Hot]</p>
+                <p>$5</p>  
+              </div>
+              <div class="coffee-menu">
+                <p class="menu-name">Espresso</p>
+                <p>[Hot]</p>
+                <p>$6</p> 
+              </div>
+              <div class="coffee-menu">
+                <p class="menu-name">Mocha</p>
+                <p>[Hot/Ice]</p>
+                <p>$6</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./photo/tea.jpg" alt="Tea cup and tea pot">
+            <div class="card-content">
+              <h2>Tea</h2>
+              <p>We are also proud of our teas. If you are a tea drinker, try our tea!</p>
+              <div class="tea-menu">
+                <p class="menu-name">Earl Gray</p>
+                <p>[Hot]</p>
+                <p>$5</p>
+              </div>
+              <div class="tea-menu">
+                <p class="menu-name">Darjeeling</p>
+                <p>[Hot]</p>
+                <p>$5</p>
+              </div>
+              <div class="tea-menu">
+                <p class="menu-name">Green Tea</p>
+                <p>[Hot]</p>
+                <p>$5</p>  
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./photo/hot-chocolate.jpg" alt="Hot chocolate in a cup">
+            <div class="card-content">
+              <h2>Hot Chocolate</h2>
+              <h2>$5</h2>
+              <p>If you are tired, take a break with a sweet, warm cup of hot chocolate.</p>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./photo/fruit-juice.jpg" alt="Strawberry juice nad kiwi and lemon juice">
+            <div class="card-content" id="juice-menu">
+              <h2>Fruit Juice</h2>
+              <p>Freshly squeezed juices made from fresh fruit!</p>
+              <div class="juice-menu">
+                <p class="menu-name">Orange</p>
+                <p>$5</p>
+              </div>
+              <div class="juice-menu">
+                <p class="menu-name">Apple</p>
+                <p>$5</p>
+              </div>
+              <div class="juice-menu">
+                <p class="menu-name">Pineapple</p>
+                <p>$5</p>  
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./photo/smoothie.jpg" alt="Two glasses of smoothie">
+            <div class="card-content" id="smoothie-menu">
+              <h2>Smoothie</h2>
+              <p>Smoothies are the best way to get lots of fruit and vegetables easily.</p>
+              <div class="smoothie-menu">
+                <p class="menu-name">Red fruit and berries</p>
+                <p>$7</p>
+              </div>
+              <div class="smoothie-menu">
+                <p class="menu-name">Yellow fruit and vegetables</p>
+                <p>$7</p>
+              </div>
+              <div class="smoothie-menu">
+                <p class="menu-name">Green fruit and vegetables</p>
+                <p>$7</p>  
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./photo/soft-drink.jpg" alt="Coke in a glass">
+            <div class="card-content" id="softdrink-menu">
+              <h2>Soft Drink</h2>
+              <p>Sometimes you just want a soft drink.</p>
+              <div class="softdrink-menu">
+                <p class="menu-name">Coke Zero</p>
+                <p>$4.5</p>
+              </div>
+              <div class="softdrink-menu">
+                <p class="menu-name">Lemonade</p>
+                <p>$4.5</p>
+              </div>
+              <div class="softdrink-menu">
+                <p class="menu-name">Ginger Beer</p>
+                <p>$4.5</p>  
+              </div>
+            </div>
+          </div>
+        </div>
+         <!-- Kids Menu -->
+        <h2 id="kids" class="menu-title">Kids</h2>
+        <div class="menu-cards grid-container">
+          <div class="grid-item">
+            <img src="./photo/sausage-roll.jpg" alt="Sausage roll">
+            <div class="card-content">
+              <h2>Sausage Roll</h2>
+              <h2>$7</h2>
+              <p>Bite-sized, homemade sausage rolls that you could eat as many as you like.</p>
+              <div class="tags">
+                <p class="popular-tag">Popular</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./photo/pizza.jpg" alt="Pizza">
+            <div class="card-content">
+              <h2>Pizza</h2>
+              <h2>$10</h2>
+              <p>Mini pizzas of a size that even children can eat by themselves.</p>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./photo/chicken-nugget.jpg" alt="Chicken nuggets">
+            <div class="card-content">
+              <h2>Chicken Nugget</h2>
+              <h2>$6</h2>
+              <p>Small, easy-to-eat chicken nuggets. Eat with your favourite sauce!</p>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./photo/meat-pie.jpg" alt="Meat pie on the plate">
+            <div class="card-content">
+              <h2>Meat Pie</h2>
+              <h2>$8</h2>
+              <p>One meat pie is enough to fill you up. Be careful, the filling is hot!</p>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./photo/chips.jpg" alt="Chips with ketchup">
+            <div class="card-content">
+              <h2>Chips</h2>
+              <h2>$5</h2>
+              <p>Even if you have a lot of likes and dislikes, you can eat this, can't you?</p>
+              <div class="tags">
+                <p class="vegetarian-tag">Vegetarian</p>
+                <p class="vegan-tag">Vegan</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./photo/cupcake.jpg" alt="Cupcakes with cream and nuts on the top">
+            <div class="card-content">
+              <h2>Cupcake</h2>
+              <h2>$5</h2>
+              <p>Small, cute cupcakes are ideal for desserts and snacks!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer>
+    <!-- cafe info -->
+    <div class="footer-container">
+      <div class="company-info">
+        <div class="footer-title">
+          <h4>Local café  &copy; 2024</h4>
+        </div>
+        <table id="info-table">
+          <tbody>
+            <tr>
+              <td><img src="./icon/coffee-shop.png" alt="coffee shop icon"></td>
+              <td>128 Main Street Moorabbin, VIC 3189</td>
+            </tr>
+            <tr>
+              <td><img src="./icon/phone-call.png" alt="phone icon"></td>
+              <td>(03) 9123 4567</td>
+            </tr>
+            <tr>
+              <td><img src="./icon/mail.png" alt="mail icon"></td>
+              <td>info@localcafe.com.au</td>
+            </tr>
+          </tbody>
+         </table>
+      </div>
+      <!-- sns -->
+     <div class="sns">
+       <div class="footer-title">
+          <h4>Follow Us!</h4>
+       </div>
+         <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+         <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>    
+     </div>
+      <!-- sign up -->
+     <div class="signup">
+       <div class="footer-title">
+          <h4>Keep in touch!</h4>
+       </div>
+       <form action="#">
+         <div id="signup-label"><label for="signup-form">Sign up to get the best deals!</label></div>
+         <input type="text" name="signup" placeholder="email" id="signup-form">
+         <button type="submit" class="btn-light-small">Sign up</button>
+       </form>
+     </div>
+   </div>
+ </footer>
+ <script src="https://kit.fontawesome.com/699827ac0b.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" media="screen and (max-width:768px)" href="./mobile.css">
+  <title>Local Cafe | Home</title>
+</head>
+<body>
+  <header>
+    <!-- Navbar -->
+    <nav class="block-navbar">
+      <div class="container nx-flex navbar" id="logo">
+        <img src="./logo.jpg" alt="logo">
+        <div class="nav-menu">
+          <ul>
+            <li><a href="./index.html" class="current">Home</a></li>
+            <li><a href="./menu.html" class="non-current">Menu</a></li>
+            <li><a href="./about.html" class="non-current">About</a></li>
+            <li><a href="#" class="non-current">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Hero section -->
+  <section id="hero">
+    <div class="container">
+       <div class="hero-content">
+        <h1>Local Café</h1>
+        <div class="book-and-delivery nx-flex">
+          <div id="booking-btn">
+            <label for="booking">
+              <input type="button" class="btn-primary" id="booking" value="Book Now!">
+            </label>
+          </div>
+          <div id="online-btn">
+            <label for="deliverly">
+              <input type="button" class="btn-primary" id="deliverly" value="Delivery Now!">
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <main id="home-main" class="nx-flex">
+    <!-- Map section -->
+    <section id="map" class="ny-flex">
+      <h2 class="section-title">Location</h2>
+      <div class="location">
+        <p class="big-txt">128 Main Street Moorabbin, VIC 3189</p>
+        <p>Just 5 minutes walk from Moorabbin Station!</p>
+        <div class="container nx-flex">
+          <div class="google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1134.9301048429777!2d145.03686632903077!3d-37.934817180579145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad66c068d18ee03%3A0x5045675218cde30!2sMoorabbin%20VIC%203189!5e0!3m2!1sen!2sau!4v1728107066313!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Location of cafés on Google Maps">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Opening-hour section -->
+    <section id="hours" class="ny-flex">
+      <h2 class="section-title">We are open for 7 days!</h2>
+      <div class="time-container">
+        <table id="time-table">
+          <thead>
+            <tr>
+              <th>Days</th>
+              <th>Open</th>
+              <th>Close</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday</td>
+              <td>7:30 am</td>
+              <td>4:00 pm</td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>7:30 am</td>
+              <td>4:00 pm</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>7:30 am</td>
+              <td>4:00 pm</td>
+            </tr>
+            <tr>
+              <td>Thursday</td>
+              <td>7:30 am</td>
+              <td>4:00 pm</td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td>7:30 am</td>
+              <td>4:00 pm</td>
+            </tr>
+            <tr>
+              <td>Saturday</td>
+              <td>8:30 am</td>
+              <td>3:00 pm</td>
+            </tr>
+            <tr>
+              <td>Sunday</td>
+              <td>8:30 am</td>
+              <td>3:00 pm</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="check-menu-label">
+        <p class="big-txt">Why not check out the menu first?</p>
+        <a href="./menu.html"><p class="btn-primary" id="menu-btn">Check Our Menu!</p></a>
+      </div>
+    </section>
+    <!-- Review section -->
+     <section id="reviews" class="ny-flex">
+      <h2 class="section-title">Customer's Voices</h2>
+      <div class="container">
+        <div class="review-content">
+          <div class="review" id="review1">
+            <div class="reviewer">
+              <img src="./photo/mark.jpg" alt="Mark">
+              <div class="text-italic">Mark</div>
+            </div>
+            <div class="review-text">
+              <p>The coffee here is the best!</p>
+              <p>⭐️⭐️⭐️⭐️⭐️</p>
+            </div>
+          </div>
+          <div class="review" id="review2">
+            <div class="reviewer">
+              <img src="./photo/lisa.jpg" alt="Lisa">
+              <div class="text-italic">Lisa</div>
+            </div>
+            <div class="review-text">
+              <p>I really like the atmosphere of the café.</p>
+              <p>⭐️⭐️⭐️⭐️</p>
+            </div>
+          </div>
+          <div class="review" id="review3">
+            <div class="reviewer">
+              <img src="./photo/dave.jpg" alt="Dave">
+              <div class="text-italic">Dave</div>
+            </div>
+            <div class="review-text">
+              <p>Not too expensive and good portions.</p>
+              <p>⭐️⭐️⭐️⭐️</p>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+  </main>
+   <!-- Footer -->
+  <footer>
+     <!-- cafe info -->
+    <div class="footer-container">
+      <div class="company-info">
+        <div class="footer-title">
+          <h4>Local café  &copy; 2024</h4>
+        </div>
+        <table id="info-table">
+            <tbody>
+              <tr>
+                <td><img src="./icon/coffee-shop.png" alt="coffee shop icon"></td>
+                <td>128 Main Street Moorabbin, VIC 3189</td>
+              </tr>
+              <tr>
+                <td><img src="./icon/phone-call.png" alt="phone icon"></td>
+                <td>(03) 9123 4567</td>
+              </tr>
+              <tr>
+                <td><img src="./icon/mail.png" alt="mail icon"></td>
+                <td>info@localcafe.com.au</td>
+              </tr>
+            </tbody>
+        </table>
+      </div>
+       <!-- sns -->
+      <div class="sns">
+        <div class="footer-title">
+           <h4>Follow Us!</h4>
+        </div>
+          <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>    
+      </div>
+       <!-- sign up -->
+      <div class="signup">
+        <div class="footer-title">
+           <h4>Keep in touch!</h4>
+        </div>
+        <form action="#">
+          <div id="signup-label"><label for="signup-form">Sign up to get the best deals!</label></div>
+          <input type="text" name="signup" placeholder="email" id="signup-form">
+          <button type="submit" class="btn-light-small">Sign up</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/699827ac0b.js" crossorigin="anonymous"></script>
+  </body>
+</html>

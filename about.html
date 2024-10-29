@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" media="screen and (max-width:768px)" href="./mobile.css">
+  <title>Local Cafe | About</title>
+</head>
+<body>
+  <header>
+    <!-- Navbar -->
+    <nav class="block-navbar">
+      <div class="container nx-flex navbar" id="logo">
+        <img src="./logo.jpg" alt="logo">
+        <div class="nav-menu">
+          <ul>
+            <li><a href="./index.html" class="non-current">Home</a></li>
+            <li><a href="./menu.html" class="non-current">Menu</a></li>
+            <li><a href="./about.html" class="current">About</a></li>
+            <li><a href="#" class="non-current">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="about-main">
+    <!-- Cafe image and info -->
+    <section id="about-hero">
+      <h1 class="hero-title">About Us</h1>
+      <div class="about-content grid-container-dark">
+        <div class="grid-container-left">
+          <div id="cafe-img" class="grid-row-item-dark">
+          <img src="./photo/cofeeCups.jpg" alt="Cup with latte-art coffee and green houseplants.">
+          </div>
+        </div>
+        <div class="grid-row-container-right">
+          <div class="grid-row-item-dark">
+            <div id="cafe-info">
+              <p>What kind of place is a café to you?</p>
+              <p>A place to drink coffee?</p>
+              <p>A place to enjoy a light meal?</p>
+              <p>A place to take a break and relax?</p>
+              <p> We offer you good food and drink and a bright, open and welcoming space to relax.</p>
+              <p>Sometimes you just need to forget the hustle and bustle of everyday life, relax and enjoy the moment!</p>
+            </div>
+          </div>
+            <!-- Staff cards -->
+          <div class="grid-row-item-dark">
+            <h2>Meet Our Specialists!</h2>
+            <div class="staff-cards">
+              <div class="staff" id="staff1">
+                <div class="staff-img-and-name">
+                  <img src="./photo/rose.jpg" alt="Rose">
+                  <p class="staff-name">Rose</p>
+                </div>
+                <p><strong>Café owner</strong></p>
+                <p>She loves dogs, so if you bring your dog she might offer you a puppuccino.</p>
+              </div>
+              <div class="staff" id="staff2">
+                <div class="staff-img-and-name">
+                  <img src="./photo/john.jpg" alt="John">
+                  <p class="staff-name">John</p>
+                </div>
+                <p><strong>Chef</strong></p>
+                <p>Expert in cooking, trained in famous restaurants. Ask him about the menu!</p>
+              </div>
+              <div class="staff" id="staff3">
+                <div class="staff-img-and-name">
+                  <img src="./photo/mary.jpg" alt="Mary">
+                  <p class="staff-name">Mary</p>
+                </div>
+                <p><strong>Barista</strong></p>
+                <p>She knows everything about coffee. She is also excellent at latte art!</p>
+              </div>
+            </div>
+          </div>
+          <!-- Mini gallery -->
+          <div class="grid-row-item-dark">
+            <h2>Gallery</h2>
+            <div class="mini-gallery css-carousel-slider6">
+              <div class="slide-wrap-main">
+                <div class="slide">
+                  <img src="./photo/cofeeBeans.jpg" alt="Coffee beans">
+                  <img src="./photo/cafeOutside.jpg" alt="Exterior view of the café. Terrace seating">
+                </div>
+              </div>
+              <div class="slide-wrap">
+                <div class="slide">
+                  <img src="./photo/cofeeBeans.jpg" alt="Coffee beans">
+                  <img src="./photo/cafeOutside.jpg" alt="Exterior view of the café. Terrace seating">
+                </div>
+                <div class="slide">
+                  <img src="./photo/latte.jpg" alt="Cofee with latte art">
+                  <img src="./photo/vege-burger.jpg" alt="Vegetarian burger">
+                </div>
+                <div class="slide">
+                  <img src="./photo/spaghetti.jpg" alt="Spaghetti with panchetta">
+                  <img src="./photo/espresso.jpg" alt="Espresso">
+                </div>
+                <div class="slide">
+                  <img src="./photo/muffin.jpg" alt="muffins">
+                  <img src="./photo/black-coffee.jpg" alt="Hot black coffee">
+                </div>
+                <div class="slide">
+                  <img src="./photo/waffle.jpg" alt="Waffle with strawberries">
+                  <img src="./photo/mocha.jpg" alt="Mocha with latte art">
+                </div>
+                <div class="slide">
+                  <img src="./photo/pork-chop.jpg" alt="Pork chop with green vegetable">
+                  <img src="./photo/orange-juice.jpg" alt="One glass of orange juice">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact form -->
+    <section id="contact-form">
+      <h2>Contact form</h2>
+      <p>Please tell us what you think about our café!</p>
+        <form action="#" name="contact">
+          <!-- INPUT GROUP 1: NAME -->
+          <div class="input-group">
+            <label for="name">Name</label>
+            <input type="text" id="name">
+          </div>
+          <!-- INPUT GROUP 2: EMAIL -->
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email">
+          </div>
+          <!-- INPUT GROUP 3: MESSAGE -->
+          <div class="input-group">
+            <label for="message">Message</label>
+            <textarea id="message"></textarea>
+          </div>
+          <!-- INPUT 4: SUBMIT BUTTON -->
+          <button type="submit" class="btn-primary" id="c-btn">Submit</button>
+        </form>
+    </section>
+  </main>
+ <!-- Footer -->
+ <footer>
+  <!-- cafe info -->
+  <div class="footer-container">
+    <div class="company-info">
+      <div class="footer-title">
+        <h4>Local café  &copy; 2024</h4>
+      </div>
+      <table id="info-table">
+        <tbody>
+          <tr>
+            <td><img src="./icon/coffee-shop.png" alt="coffee shop icon"></td>
+            <td>128 Main Street Moorabbin, VIC 3189</td>
+          </tr>
+          <tr>
+            <td><img src="./icon/phone-call.png" alt="phone icon"></td>
+            <td>(03) 9123 4567</td>
+          </tr>
+          <tr>
+            <td><img src="./icon/mail.png" alt="mail icon"></td>
+            <td>info@localcafe.com.au</td>
+          </tr>
+        </tbody>
+       </table>
+    </div>
+    <!-- sns -->
+   <div class="sns">
+     <div class="footer-title">
+        <h4>Follow Us!</h4>
+     </div>
+       <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+       <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>    
+   </div>
+    <!-- sign up -->
+   <div class="signup">
+     <div class="footer-title">
+        <h4>Keep in touch!</h4>
+     </div>
+     <form action="#">
+       <div id="signup-label"><label for="signup-form">Sign up to get the best deals!</label></div>
+       <input type="text" name="signup" placeholder="email" id="signup-form">
+       <button type="submit" class="btn-light-small">Sign up</button>
+     </form>
+   </div>
+ </div>
+</footer>
+ <script src="https://kit.fontawesome.com/699827ac0b.js" crossorigin="anonymous"></script>
+</body>
+</html>
