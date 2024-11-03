@@ -371,6 +371,7 @@ input {
   object-fit: cover;
 }
 
+/* Menu: About menu section */
 #about-menu {
   display: grid;
   grid-template-rows: repeat(2, 1fr);

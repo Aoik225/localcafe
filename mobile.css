@@ -218,6 +218,7 @@ main {
   padding-top: 0;
 }
 
+/* Menu: About menu section */
 .about-menu-content {
   display: flex;
   flex-direction: column;
