@@ -205,6 +205,18 @@ main {
 .menu-container {
   display: flex;
   flex-direction: column;
+  margin: auto;
+  overflow: hidden;
+}
+
+#about-menu {
+  display:flex;
+  flex-direction: column;
+}
+
+#menu-search {
+  margin-bottom: 0;
+  padding-top: 0;
 }
 
 .about-menu-content {
@@ -221,13 +233,16 @@ main {
 }
 
 #download-btn {
-  border: 0.3em dotted var(--main-offdark);
-  padding: 2em 0 2em 0;
-  height: 55%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+  padding: 1em;
 }
 
 #download-btn label {
   font-size: 1.3em;
+  padding: 0.1em;
+  margin: auto;
   }
 
 /* Menu: Main-section */
@@ -285,7 +300,6 @@ main {
   background-color: var(--main-dark);
   color: var(--main-light);
   padding: 2em;
-  padding-bottom: 0em;
   display: flex;
   flex-direction: column;
 }
