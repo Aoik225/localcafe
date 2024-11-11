@@ -210,7 +210,7 @@ input {
   background-image: linear-gradient(to bottom right, var(--gradiant-dark), var(--gradiant-middle), var(--gradiant-light)),
   url('./photo/cafeInside.jpg');
   background-size: auto, cover;
-  height: 100vh;
+  height: 90vh;
 }
 
 #hero h1 {

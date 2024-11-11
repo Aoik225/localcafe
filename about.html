@@ -6,6 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Keywords -->
   <meta name="keywords" content="cafe moorabbin, local cafe moorabbin, best cafe in moorabbin, best breakfast near me, specialty coffee in moorabbin, family friendly cafe in moorabbin">
+  <!-- SCP -->
+  <meta http-equiv="Content-Security-Policy" content="
+  default-src 'self';
+  script-src 'self' https://maps.googleapis.com https://maps.gstatic.com https://kit.fontawesome.com;
+  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://maps.googleapis.com https://maps.gstatic.com https://ka-f.fontawesome.com;
+  img-src 'self' https://maps.gstatic.com https://maps.googleapis.com data:;
+  font-src 'self' https://fonts.gstatic.com https://ka-f.fontawesome.com https://kit.fontawesome.com;
+  connect-src 'self' https://ka-f.fontawesome.com;
+  frame-src https://www.google.com https://maps.google.com;">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
@@ -21,9 +31,9 @@
         <img src="./logo.jpg" alt="logo">
         <div class="nav-menu">
           <ul>
-            <li><a href="./index.html" class="non-current">Home</a></li>
-            <li><a href="./menu.html" class="non-current">Menu</a></li>
-            <li><a href="./about.html" class="current">About</a></li>
+            <li><a href="./index.html" class="non-current" aria-label="Go to Home page">Home</a></li>
+            <li><a href="./menu.html" class="non-current" aria-label="Go to Menu page">Menu</a></li>
+            <li><a href="./about.html" class="current" aria-label="Current page is About page">About</a></li>
             <li><a href="#" class="non-current">Login</a></li>
           </ul>
         </div>
@@ -150,7 +160,7 @@
   <div class="footer-container">
     <div class="company-info">
       <div class="footer-title">
-        <h4>Local café  &copy; 2024</h4>
+        <h3>Local café  &copy; 2024</h3>
       </div>
       <table id="info-table">
         <tbody>
@@ -172,15 +182,15 @@
     <!-- SNS -->
    <div class="sns">
      <div class="footer-title">
-        <h4>Follow Us!</h4>
+        <h3>Follow Us!</h3>
      </div>
-       <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-       <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>    
+       <a href="https://www.facebook.com/" target="_blank" aria-label="Go to facebook page"><i class="fa-brands fa-facebook"></i></a>
+       <a href="https://www.instagram.com/" target="_blank" aria-label="Go to instagram page"><i class="fa-brands fa-instagram"></i></a>    
    </div>
     <!-- Sign up -->
    <div class="signup">
      <div class="footer-title">
-        <h4>Keep in touch!</h4>
+        <h3>Keep in touch!</h3>
      </div>
      <form action="#">
        <div id="signup-label"><label for="signup-form">Sign up to get the best deals!</label></div>
