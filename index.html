@@ -11,16 +11,16 @@
   <!-- CSP -->
   <meta http-equiv="Content-Security-Policy" content="
   default-src 'self';
-  script-src https://maps.googleapis.com https://maps.gstatic.com https://kit.fontawesome.com https://www.googletagmanager.com https://www.googletagmanager.com/gtag/js?id=G-CKYS6Y3Y6G 'unsafe-inline';
+  script-src 'self' https://maps.googleapis.com https://maps.gstatic.com https://kit.fontawesome.com https://www.googletagmanager.com https://www.googletagmanager.com/gtag/js?id=G-CKYS6Y3Y6G 'unsafe-inline' 'nonce-abc2761c';
   style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://maps.googleapis.com https://maps.gstatic.com;
   img-src 'self' https://maps.gstatic.com https://maps.googleapis.com data:;
   font-src 'self' https://fonts.gstatic.com;
-  frame-src https://www.google.com https://maps.google.com;">
+  frame-src https://www.google.com https://maps.google.com;"> 
 
 
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CKYS6Y3Y6G"></script>
-  <script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CKYS6Y3Y6G" nonce="abc2761c"></script>
+  <script nonce="abc2761c">
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
