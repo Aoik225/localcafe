@@ -375,6 +375,14 @@ main {
   margin-bottom: 1em;
 }
 
+#dev-intro {
+  margin-top: 1.5em;
+}
+
+#dev-intro a {
+  font-size: 15px;
+}
+
 .signup {
   border-top: 0.2em dotted var(--main-primary);
   border-left: none;
@@ -383,4 +391,9 @@ main {
 
 .company-info {
   padding-bottom: 0.5em;
+}
+
+/* Footer */
+#notice p {
+  font-size: 12px;
 }

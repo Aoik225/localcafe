@@ -820,10 +820,26 @@ footer {
   margin: 0.1em;
 }
 
+#dev-intro {
+  margin-top: 2em;
+}
+
+#dev-intro a {
+  font-size: 20px;
+}
+
 .signup {
   border-left: 0.5em dotted var(--main-primary);
 }
 
 #signup-label {
   margin-bottom: 0.5em;
+}
+
+#notice {
+  margin-top: 2em;
+}
+
+#notice p {
+  font-size: 16px;
 }
