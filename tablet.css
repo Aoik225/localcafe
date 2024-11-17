@@ -8,7 +8,7 @@ select,
 textarea,
 .navbar-search .search-query {
   font-family: "Playfair Display", Times, serif;
-  font-size: 15px;
+  font-size: 20px;
   color: var(--main-dark);
 }
 
@@ -51,7 +51,7 @@ main {
 }
 
 .hero-title {
-  font-size: 3em;
+  font-size: 5em;
 }
 
 .nx-flex, .ny-flex {
@@ -116,12 +116,12 @@ main {
 
 /* Home: Hero */
 #hero {
-  height: 70vh;
+  height: 90vh;
 }
 
 #hero h1 {
   color: var(--main-offprimary);
-  font-size: 4.5em;
+  font-size: 7em;
 }
 
 .book-and-delivery {
@@ -200,7 +200,13 @@ main {
   padding: 2em;
 }
 
+.review {
+  width: 90%;
+  margin: auto;
+}
+
 /* Menu: Menu-hero */
+
 .menu-container {
   display: flex;
   flex-direction: column;
@@ -239,8 +245,8 @@ main {
 #download-btn {
   display: flex;
   flex-direction: column;
-  margin-top: 1em;
-  padding: 0.6em;
+  margin-top: 2em;
+  padding: 1em;
 }
 
 #download-btn label {
@@ -289,7 +295,7 @@ main {
 }
 
 .grid-item img {
-  height: 130px;
+  height: 12em;
 }
 
 /* About: Main/Hero */
@@ -329,10 +335,10 @@ main {
 }
 
 .staff-name {
-  font-size: larger;
+  font-size: 1.5em;
   font-style: italic;
   margin: auto;
-  padding-top: 3em;
+  padding-top: 3.5em;
 }
 
 .staff-img-and-name {
@@ -363,6 +369,10 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+#info-table {
+  margin: auto;
 }
 
 .company-info {

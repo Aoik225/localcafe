@@ -10,8 +10,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" media="screen and (max-width:768px)" href="./mobile.css">
+  <link rel="stylesheet" media="screen and (max-width:767px)" href="./mobile.css">
+  <link rel="stylesheet" media="screen and (min-width:768px) and (max-width: 1024px)" href="./tablet.css">
   <title>Local Cafe | Menu</title>
 </head>
 <body>
@@ -44,7 +47,7 @@
             <p>If you have any questions about the menu, feel free to ask our supportive staff or use the contact form!</p>
             <div id="menu-search">
               <form action="#">
-                <label for="searchbar">You Can Search Menu Here!</label>
+                <label for="searchbar" id="menu-search-label">You Can Search Menu Here!</label>
                 <input type="text" placeholder="Search menu" id="searchbar">
                 <button type="submit" class="btn-offprimary-small">Search</button>
               </form>

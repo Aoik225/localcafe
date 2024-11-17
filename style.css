@@ -593,7 +593,6 @@ font-size: 1.5em;
 #cafe-img img {
   display: block;
   object-fit: cover;
-  width: 100%;
 }
 
 .gid-container-right {
@@ -616,7 +615,7 @@ font-size: 1.5em;
 
 #welcome-txt {
   font-size: 1.2em;
-  padding-bottom: 0.9em;
+  padding-bottom: 0.4em;
 }
 
 /* About: Main-section_staff cards */
@@ -639,9 +638,9 @@ font-size: 1.5em;
 }
 
 .staff-name {
-  font-size: larger;
+  font-size: 1em;
   font-style: italic;
-  margin: 0.1em;
+  margin: auto;
   padding: 1em;
 }
 
