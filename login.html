@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" media="screen and (max-width:767px)" href="./mobile.css">
+  <link rel="stylesheet" media="screen and (min-width:768px) and (max-width: 1024px)" href="./tablet.css">
+  <title>Local Cafe | About</title>
+</head>
+<body>
+  <header>
+    <!-- Navbar -->
+    <nav class="block-navbar">
+      <div class="container nx-flex navbar" id="logo">
+        <img src="./logo.jpg" alt="logo">
+        <div class="nav-menu">
+          <ul>
+            <li><a href="./index.html" class="non-current" aria-label="Go to Home page">Home</a></li>
+            <li><a href="./menu.html" class="non-current" aria-label="Go to Menu page">Menu</a></li>
+            <li><a href="./about.html" class="non-current" aria-label="Go to About page">About</a></li>
+            <li><a href="./login.html" class="current" aria-label="Current page is Login page">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Login form -->
+  <section id="login-hero">
+    <h1 class="hero-title">Login</h1>
+      <div class="login-container">
+          <form action="#" class="ny-flex">
+            <div id="email-input">
+              <label for="email">Email:</label><br>
+              <input type="text" id="email" name="email" placeholder="email"><br>
+            </div>
+            <div id="password-input">
+              <label for="password">Password:</label><br>
+              <input type="password" id="password" name="password" placeholder="password">
+            </div>
+            <button class="btn-primary" id="login-button">Login</button>
+          </form>
+      </div>
+  </section> 
+  
+  <!-- Footer -->
+  <footer>
+    <!-- Cafe info -->
+    <div class="footer-container">
+      <div class="company-info">
+        <div class="footer-title">
+          <h3>Local café  &copy; 2024</h3>
+        </div>
+        <table id="info-table">
+          <tbody>
+            <tr>
+              <td><img src="./icon/coffee-shop.png" alt="coffee shop icon"></td>
+              <td>128 Main Street Moorabbin, VIC 3189</td>
+            </tr>
+            <tr>
+              <td><img src="./icon/phone-call.png" alt="phone icon"></td>
+              <td>(03) 9123 4567</td>
+            </tr>
+            <tr>
+              <td><img src="./icon/mail.png" alt="mail icon"></td>
+              <td>info@localcafe.com.au</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- SNS -->
+      <div class="sns">
+        <div class="footer-title">
+          <h3>Follow Us!</h3>
+        </div>
+          <a href="https://www.facebook.com/" target="_blank" aria-label="Go to facebook page"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" aria-label="Go to instagram page"><i class="fa-brands fa-instagram"></i></a> 
+        <div id="dev-intro">
+          <div class="footer-title">
+            <h3>Check the website developer!</h3>
+          </div> 
+            <a href="https://github.com/Aoik225">Aoi: https://github.com/Aoik225</a>
+        </div> 
+      </div>
+      <!-- Sign up -->
+    <div class="signup">
+      <div class="footer-title">
+          <h3>Keep in touch!</h3>
+      </div>
+      <form action="#">
+        <div id="signup-label"><label for="signup-form">Sign up to get the best deals!</label></div>
+        <input type="text" name="signup" placeholder="email" id="signup-form">
+        <button type="submit" class="btn-light-small">Sign up</button>
+      </form>
+      <div id="notice">
+        <p>This website is for a fictional café run by students studying on the Holmesglen IT course (Certificate IV in Information Technology (Web Development)).</p>
+      </div>
+    </div>
+  </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/699827ac0b.js" crossorigin="anonymous"></script>
+</body>
+</html>

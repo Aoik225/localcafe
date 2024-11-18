@@ -358,6 +358,24 @@ main {
   border-radius: 10%;
 }
 
+/* Login */
+.login-container {
+  margin: auto;
+  margin-top: 1em;
+  padding: 1em;
+  width: 100%;
+  border: solid 0.5em var(--main-primary);
+}
+
+.login-container input {
+  width: 100%;
+}
+
+.login-container label {
+  display: flex;
+}
+
+
 /* Footer */
 .footer-container {
   display: flex;

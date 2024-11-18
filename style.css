@@ -775,6 +775,28 @@ font-size: 1.5em;
   border-color: var(--main-primary);
 }
 
+/* Login */
+#login-hero {
+  padding: 2em;
+}
+
+.login-container {
+  margin: auto;
+  padding: 3em;
+  width: 50%;
+  border: solid 0.5em var(--main-primary);
+}
+
+.login-container input {
+  width: 100%;
+}
+
+#login-button {
+  margin: auto;
+  margin-top: 1em;
+  width: 30%;
+}
+
 /* Footer */
 footer {
   background-color: var(--main-offdark);
