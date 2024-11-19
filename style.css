@@ -210,7 +210,7 @@ input {
   background-image: linear-gradient(to bottom right, var(--gradiant-dark), var(--gradiant-middle), var(--gradiant-light)),
   url('./photo/cafeInside.jpg');
   background-size: auto, cover;
-  height: 90vh;
+  padding-bottom: 5%;
 }
 
 #hero h1 {
@@ -232,6 +232,25 @@ input {
 .book-and-delivery {
   display: flex;
   flex-direction: row;
+}
+
+.btn-label {
+  color: var(--main-offdark);
+  background-color: var(--gradiant-light);
+  font-size: larger;
+  width: fit-content;
+}
+
+#booking-btn a {
+  display: block;
+  text-align: center;
+  margin-top: 1em;
+}
+
+#online-btn a {
+  display: block;
+  text-align: center;
+  margin-top: 1em;
 }
 
 /* Home: Main-Sections */
@@ -414,7 +433,6 @@ font-size: 1.5em;
 #download-btn p {
   margin-bottom: 2em;
 }
-
 
 /* Menu: Main-section */
 .menu-main {
@@ -773,6 +791,72 @@ font-size: 1.5em;
 #contact-form textarea:focus {
   outline: none;
   border-color: var(--main-primary);
+}
+
+/* Booking */
+#booking-hero {
+  padding: 2em;
+}
+
+#booking-form {
+  margin: 1em;
+  padding: 2em;
+  border: solid 0.5em var(--main-offprimary);
+  width: 40%;
+}
+
+#btable {
+display: flex;
+justify-content: flex-start;
+gap: 1em;
+}
+
+#ccomment input{
+  width: 100%;
+  padding-bottom: 10%;
+}
+
+#table-setting-photo {
+  display: flex;
+  padding: 1em;
+  width: 50%;
+}
+
+.table-setting-example img {
+  display: flex;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* CSS animation */
+
+.anim-box.pulsation {
+  animation: pulsation 2s ease-out infinite;
+  opacity: 1;
+}
+@keyframes pulsation {
+  0%, 40%, 60%, 80% {
+    transform: scale(1.0);
+  }
+  50%, 70% {
+    transform: scale(0.95);
+  }
+}
+
+.table-setting-example p {
+  margin: 1em;
+  background-color: var(--gradiant-middle);
+  padding: 1em;
+}
+
+.description {
+  background-color: var(--gradiant-light);
+  padding: 1em;
+}
+
+.description li {
+  color: var(--main-dark);
+  line-height: 2em;
 }
 
 /* Login */

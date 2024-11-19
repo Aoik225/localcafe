@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" media="screen and (max-width:767px)" href="./mobile.css">
   <link rel="stylesheet" media="screen and (min-width:768px) and (max-width: 1024px)" href="./tablet.css">
-  <title>Local Cafe | Login</title>
+  <title>Local Cafe | Booking</title>
 </head>
 <body>
   <header>
@@ -26,31 +26,82 @@
             <li><a href="./index.html" class="non-current" aria-label="Go to Home page">Home</a></li>
             <li><a href="./menu.html" class="non-current" aria-label="Go to Menu page">Menu</a></li>
             <li><a href="./about.html" class="non-current" aria-label="Go to About page">About</a></li>
-            <li><a href="./booking.html" class="non-current" aria-label="Go to Booking page">Booking</a></li>
-            <li><a href="./login.html" class="current" aria-label="Current page is Login page">Login</a></li>
+            <li><a href="./booking.html" class="current" aria-label="Current page is Booking page">Booking</a></li>
+            <li><a href="./login.html" class="non-current" aria-label="Go to Login page">Login</a></li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
-  <!-- Login form -->
-  <section id="login-hero">
-    <h1 class="hero-title">Login</h1>
-      <div class="login-container">
-          <form action="#" class="ny-flex">
-            <div id="email-input">
-              <label for="email">Email:</label>
-              <input type="text" id="email" name="email" placeholder="email">
+  <section id="booking-hero">
+    <h1 class="hero-title">Booking</h1>
+      <div class="booking-container nx-flex">
+        <form action="#" class="ny-flex" id="booking-form">
+          <div id="cname">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="name">
+          </div>
+          <div id="cemail">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="email">
+          </div>
+          <div id="cphone">
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" placeholder="phone number">
+          </div>
+          <div id="bdate">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+          </div>
+          <div id="btime">
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time">
+          </div>
+          <div id="btable" class="nx-flex">
+            <p>Table Setting: </p>
+            <div id="table-input">
+              <input type="radio" id="inside" name="inside" value="inside">
+              <label for="inside">Inside</label>
+              <input type="radio" id="outside" name="outside" value="outside">
+              <label for="outside">Outside</label>  
             </div>
-            <div id="password-input">
-              <label for="password">Password:</label>
-              <input type="password" id="password" name="password" placeholder="password">
-            </div>
-            <button type="button" class="btn-primary" id="login-button">Login</button>
-          </form>
+          </div>
+          <div id="npeople">
+            <label for="people">People: </label>
+            <input type="number" id="people" name="people" placeholder="number of people">
+          </div>
+          <div id="ccomment">
+            <label for="comment">Comment: </label>
+            <input type="text" id="comment" name="comment" placeholder="allergies or preferences">
+          </div>
+          <button type="button" class="btn-primary" id="submit-btn">Submit</button>
+        </form>
+        <div class="nx-flex" id="table-setting-photo">
+          <div class="table-setting-example">
+            <img src="./photo/cafeInside.jpg" alt="Inside of the cafe." class="anim-box pulsation">
+            <p class="big-txt">Inside</p>
+            <div class="description">
+              <ul>
+                <li>- Indoor seating is comfortable in all weather conditions.</li>
+                <li>- Tables in the shop front, a terrace seats facing the courtyard are available.</li>
+                <li>- Please bring your pets along!</li>
+              </ul>
+            </div>  
+          </div>
+          <div class="table-setting-example">
+            <img src="./photo/cafe_outside_booking.jpg" alt="Outside of the cafe." class="anim-box pulsation">
+            <p class="big-txt">Outside</p>
+            <div class="description">
+              <ul>
+                <li>- It is very open and recommended on sunny days.</li>
+                <li>- Window seats, tables and box seats are available.</li>
+                <li>- Unfortunately, pets are not allowed.</li>
+              </ul>
+            </div>  
+          </div>
+        </div>
       </div>
   </section> 
-  
   <!-- Footer -->
   <footer>
     <!-- Cafe info -->

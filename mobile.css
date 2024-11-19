@@ -115,10 +115,6 @@ main {
 }
 
 /* Home: Hero */
-#hero {
-  height: 70vh;
-}
-
 #hero h1 {
   color: var(--main-offprimary);
   font-size: 4.5em;
@@ -126,7 +122,24 @@ main {
 
 .book-and-delivery {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.btn-label {
+  margin: auto;
+}
+
+#booking-btn a {
+  margin: auto;
+  margin-top: 0.5em;
+  width: 50%;
+}
+
+#online-btn a {
+  margin: auto;
+  margin-top: 0.5em;
+  width: 80%;
 }
 
 /* Home: Main-Sections */
@@ -356,6 +369,39 @@ main {
   padding: 0.5em;
   background-color: var(--main-primary);
   border-radius: 10%;
+}
+
+/* Booking */
+#booking-form {
+  width: 100%;
+  margin: auto;
+  margin-top: 0.5em;
+  text-align: start;
+}
+
+#btable {
+display: flex;
+text-align: left;
+}
+
+#btable p {
+  text-align: left;
+}
+
+#ccomment input{
+  width: 100%;
+  padding-bottom: 10%;
+  overflow-wrap: normal;
+}
+
+#table-setting-photo {
+  display: flex;
+  padding: 0.5em;
+  width: 100%;
+}
+
+.description {
+  text-align: left;
 }
 
 /* Login */
